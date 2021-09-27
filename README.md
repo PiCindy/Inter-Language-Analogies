@@ -1,4 +1,6 @@
 # Inter-Language-Analogies
+Justine Diliberto, Anna Nikiforovskaja, Cindy Pereira
+
 Clustering of Analogies for Inter-Language Similarities
 
 Recent works have allowed to efficiently solve morphological analogies like “think is to thought as bring is to brought” using NNs [1, 2]. Those results, available
