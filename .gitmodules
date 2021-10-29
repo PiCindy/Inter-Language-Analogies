@@ -1,0 +1,3 @@
+[submodule "task0-data"]
+	path = task0-data
+	url = https://github.com/sigmorphon2020/task0-data
