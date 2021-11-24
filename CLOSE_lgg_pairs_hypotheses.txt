@@ -1,0 +1,68 @@
+SIGMORPHON 2020:
+
+Cebuano + Hiligaynon (highest similarity of the 3 pairs, cf Trigrams paper)
+Hiligaynon + Tagalog
+Tagalog + Cebuano
+
+Old English + English
+
+Middle High German + German
+
+North Frisian + Swedish
+
+Danish + Swedish
+
+Maltese + Syriac
+
+Kannada + Telugu
+
+Akan + Gâ
+
+Mezquital Otomi + Sierra Otomi
+
+Evenki + Russian (2016)
+
+Udmurt + Komi-Zyrian
+
+Ludic + Livvi
+Livvi + Vôro
+Ludic + Vôro
+
+Eastern Chatino of San Juan Quiahije + Eastern Chatino of Yaitepec
+Eastern Chatino of San Juan Quiahije + Zenzontepec Chatino
+Eastern Chatino of San Juan Quiahije + Chichicapan Zapotec
+Zenzontepec Chatino + Chichicapan Zapotec
+Eastern Chatino of Yaitepec + Zenzontepec Chatino
+
+Moksha + Erzya
+
+Middle Low German + Swiss German
+
+bantoid branch: Zulu + Luganda
+
+finnic branch: (Livonian + Votic), Ingrian + Karelian, Ludic + Veps
+
+turkic branch: Azerbaijani + Turkmen, Turkmen + Crimean Tatar, Azerbaijani + Crimean Tatar
+    Uyghur + Uzbek
+
+evenki + turkic (which one?)
+
+indic branch: Bengali +  Hindi
+
+iranian branch: Persian + Tajik
+
+romance branch: Asturian + Galician, Ladin + Friulian, Middle French + Anglo-Norman
+
+DEPENDENCIES PAPER:
+
+Catalan (surprise 2020) + Spanish (2016)
+
+Swedish + Danish (already done)
+
+Danish + Dutch
+
+
+FINDING FAMILIES PAPER:
+
+Ladin + Catalan
+

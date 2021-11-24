@@ -1,0 +1,16 @@
+The Structure and Dynamics of Linguistic Networks:
+
+English + Bengali
+
+
+FROM DIAGRAMS:
+
+Persian/Tadjik + Ladin/Romanian/Italian/Sardinian/Catalan/Middle French/Icelandic/Danish/German/Swedish
+Hindi/Bengali + Ladin/Romanian/Italian/Sardinian/Catalan/Middle French/Icelandic/Danish/German/Swedish
+
+Evenki + Plains Cree
+Zarma + Murrinh-Patha
+Sioux + Maori
+
+Estonian/Finnish/Ingrian/Karelian/Livonian/Veps/Votic + Cebuano/Hiligaynon/Tagalog
+Estonian/Finnish/Ingrian/Karelian/Livonian/Veps/Votic + Kongo/Lingala/Luganda/Chewa/Sotho/Swahili/Zulu
