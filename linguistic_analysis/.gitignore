@@ -1,0 +1,8 @@
+__pycache__/
+build/
+nlg.egg-info/
+_nlg.cpython-38-darwin.so
+_nlgclu.cpython-38-darwin.so
+venv/
+.vscode/
+__misc__/

@@ -1,0 +1,13 @@
+minum : makan :: peminum : pemakan :: meminum : memakan :: minuman : makanan
+minum : lihat :: meminum : melihat
+minum : minuman :: main : mainan :: makan : makanan
+minum : main :: minuman : mainan
+main : makan :: mainan : makanan
+lihat : makan :: melihat : memakan :: dilihat : dimakan
+peminum : minuman :: pemakan : makanan
+meminum : minuman :: memakan : makanan
+lihat : dilihat :: makan : dimakan
+melihat : dilihat :: memakan : dimakan
+minum : meminum :: lihat : melihat :: makan : memakan
+minum : peminum :: makan : pemakan
+peminum : meminum :: pemakan : memakan

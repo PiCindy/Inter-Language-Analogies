@@ -1,0 +1,89 @@
+minum : kerjaan :: peminum : pekerjaan
+meminum : memasukkan :: diminum : dimasukkan
+minum : masukan :: peminum : pemasukan
+minum : makan :: terminum : termakan :: meminum : memakan :: diminum : dimakan :: minumlah : makanlah
+minum : masak :: meminum : memasak :: diminum : dimasak
+beli : makan :: terbeli : termakan :: dibeli : dimakan
+beli : masak :: dibeli : dimasak
+minum : ambil :: terminum : terambil :: diminum : diambil
+beli : dibelikan :: masuk : dimasukkan :: keluar : dikeluarkan :: ambil : diambilkan
+terbeli : dibelikan :: termasuk : dimasukkan :: terambil : diambilkan
+masuk : pemasukan :: kerja : pekerjaan
+main : kerjaan :: pemain : pekerjaan
+minum : kerja :: peminum : pekerja
+lari : kerjaan :: pelari : pekerjaan
+minum : minumlah :: makan : makanlah
+minum : lihat :: meminum : melihat :: diminum : dilihat
+dibeli : dibelikan :: diambil : diambilkan
+meminum : memasuki :: diminum : dimasuki
+minum : lari :: peminum : pelari
+masuk : masukan :: main : mainan :: keluar : keluaran :: kerja : kerjaan :: pekerja : pekerjaan :: masak : masakan :: makan : makanan
+masuk : makan :: termasuk : termakan :: masukan : makanan
+masuk : masak :: masukan : masakan
+minum : main :: peminum : pemain
+memasuki : memasukkan :: dimasuki : dimasukkan
+main : masukan :: pemain : pemasukan
+main : makan :: mainan : makanan
+main : masak :: mainan : masakan
+minum : masuk :: terminum : termasuk
+lari : masukan :: pelari : pemasukan
+memasuki : memakan :: dimasuki : dimakan
+memasuki : memasak :: dimasuki : dimasak
+melihat : memasukkan :: dilihat : dimasukkan
+lihat : makan :: melihat : memakan :: dilihat : dimakan
+lihat : masak :: melihat : memasak :: dilihat : dimasak
+terminum : minumlah :: termakan : makanlah
+meminum : minumlah :: memakan : makanlah
+beli : ambil :: terbeli : terambil :: dibeli : diambil :: dibelikan : diambilkan
+termasuk : masukan :: termakan : makanan
+pemain : mainan :: pekerja : kerjaan
+memasak : masakan :: memakan : makanan
+keluar : makan :: keluaran : makanan
+keluar : masak :: keluaran : masakan
+kerja : masukan :: pekerja : pemasukan
+kerja : makan :: kerjaan : makanan
+kerja : masak :: kerjaan : masakan
+pekerja : makan :: pekerjaan : makanan
+pekerja : masak :: pekerjaan : masakan
+diminum : minumlah :: dimakan : makanlah
+dimasak : masakan :: dimakan : makanan
+ambil : keluaran :: mengambil : mengeluarkan
+bermain : permainan :: bekerja : pekerjaan
+beli : keluar :: dibelikan : dikeluarkan
+ambil : makan :: terambil : termakan :: diambil : dimakan
+ambil : masak :: diambil : dimasak
+beli : lihat :: dibeli : dilihat
+beli : masuk :: terbeli : termasuk :: dibelikan : dimasukkan
+minum : beli :: terminum : terbeli :: diminum : dibeli
+main : bermain :: lari : berlari
+masuk : ambil :: termasuk : terambil :: dimasukkan : diambilkan
+pemain : bermain :: pelari : berlari
+lihat : ambil :: dilihat : diambil
+keluar : ambil :: dikeluarkan : diambilkan
+masukan : dimasukkan :: keluaran : dikeluarkan
+minum : diminum :: beli : dibeli :: lihat : dilihat :: ambil : diambil :: masak : dimasak :: makan : dimakan
+terminum : diminum :: terbeli : dibeli :: terambil : diambil :: termakan : dimakan
+meminum : diminum :: memasuki : dimasuki :: melihat : dilihat :: memasak : dimasak :: memakan : dimakan :: memasukkan : dimasukkan
+masuk : pekerja :: masukan : pekerjaan
+main : pekerja :: mainan : pekerjaan
+ambil : mengambil :: keluaran : mengeluarkan
+pemasukan : pengeluaran :: memasukkan : mengeluarkan
+masuk : kerja :: masukan : kerjaan :: pemasukan : pekerjaan
+keluar : pekerja :: keluaran : pekerjaan
+masuk : keluar :: masukan : keluaran :: dimasukkan : dikeluarkan
+minum : meminum :: lihat : melihat :: masak : memasak :: makan : memakan
+minum : peminum :: main : pemain :: lari : pelari :: kerja : pekerja :: masukan : pemasukan :: kerjaan : pekerjaan
+minum : terminum :: beli : terbeli :: masuk : termasuk :: ambil : terambil :: makan : termakan
+main : kerja :: pemain : pekerja :: mainan : kerjaan
+bermain : bekerja :: permainan : pekerjaan
+lari : kerja :: pelari : pekerja
+main : keluar :: mainan : keluaran
+memasuki : melihat :: dimasuki : dilihat
+masuk : main :: masukan : mainan
+keluar : kerja :: keluaran : kerjaan
+pemasukan : memasukkan :: pengeluaran : mengeluarkan
+memasak : memasukkan :: dimasak : dimasukkan
+memakan : memasukkan :: dimakan : dimasukkan
+main : lari :: pemain : pelari :: bermain : berlari
+terminum : meminum :: termakan : memakan
+masak : makan :: memasak : memakan :: dimasak : dimakan :: masakan : makanan

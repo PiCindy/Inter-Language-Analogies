@@ -1,0 +1,19 @@
+minum : makan :: terminum : termakan :: meminum : memakan :: diminum : dimakan :: minumlah : makanlah
+minum : masak :: meminum : memasak :: diminum : dimasak
+minum : minumlah :: makan : makanlah
+minum : lihat :: meminum : melihat :: diminum : dilihat
+masak : masakan :: makan : makanan
+lihat : makan :: melihat : memakan :: dilihat : dimakan
+lihat : masak :: melihat : memasak :: dilihat : dimasak
+terminum : minumlah :: termakan : makanlah
+meminum : minumlah :: memakan : makanlah
+memasak : masakan :: memakan : makanan
+diminum : minumlah :: dimakan : makanlah
+dimasak : masakan :: dimakan : makanan
+minum : diminum :: lihat : dilihat :: masak : dimasak :: makan : dimakan
+terminum : diminum :: termakan : dimakan
+meminum : diminum :: melihat : dilihat :: memasak : dimasak :: memakan : dimakan
+minum : meminum :: lihat : melihat :: masak : memasak :: makan : memakan
+minum : terminum :: makan : termakan
+terminum : meminum :: termakan : memakan
+masak : makan :: memasak : memakan :: dimasak : dimakan :: masakan : makanan

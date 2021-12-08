@@ -1,0 +1,133 @@
+======================================================================
+data: id-dummy-words
+======================================================================
+string2vec started
+string2vec finished
+string2vec took 0h0m0s
+------------------------------------
+nlgclu started
+nlgclu finished
+nlgclu took 0h0m0s
+------------------------------------
+strnlgclu started
+strnlgclu finished
+strnlgclu took 0h0m1s
+------------------------------------
+nlgclu2grid started
+nlgclu2grid finished
+nlgclu2grid took 0h0m0s
+------------------------------------
+======================================================================
+data: id-dummy-words
+======================================================================
+string2vec started
+string2vec finished
+string2vec took 0h0m0s
+------------------------------------
+nlgclu started
+nlgclu finished
+nlgclu took 0h0m0s
+------------------------------------
+strnlgclu started
+strnlgclu finished
+strnlgclu took 0h0m1s
+------------------------------------
+nlgclu2grid started
+nlgclu2grid finished
+nlgclu2grid took 0h0m0s
+------------------------------------
+======================================================================
+data: id-dummy-words
+======================================================================
+string2vec started
+string2vec finished
+string2vec took 0h0m0s
+------------------------------------
+nlgclu started
+nlgclu finished
+nlgclu took 0h0m1s
+------------------------------------
+strnlgclu started
+strnlgclu finished
+strnlgclu took 0h0m0s
+------------------------------------
+nlgclu2grid started
+nlgclu2grid finished
+nlgclu2grid took 0h0m0s
+------------------------------------
+======================================================================
+data: id-dummy-words
+======================================================================
+string2vec started
+string2vec finished
+string2vec took 0h0m0s
+------------------------------------
+nlgclu started
+nlgclu finished
+nlgclu took 0h0m0s
+------------------------------------
+strnlgclu started
+strnlgclu finished
+strnlgclu took 0h0m0s
+------------------------------------
+nlgclu2grid started
+nlgclu2grid finished
+nlgclu2grid took 0h0m1s
+------------------------------------
+======================================================================
+data: id-dummy-words
+======================================================================
+string2vec started
+string2vec finished
+string2vec took 0h0m1s
+------------------------------------
+nlgclu started
+nlgclu finished
+nlgclu took 0h0m0s
+------------------------------------
+strnlgclu started
+strnlgclu finished
+strnlgclu took 0h0m1s
+------------------------------------
+nlgclu2grid started
+nlgclu2grid finished
+nlgclu2grid took 0h0m0s
+------------------------------------
+======================================================================
+data: id.tiny.words
+======================================================================
+string2vec started
+string2vec finished
+string2vec took 0h0m0s
+------------------------------------
+nlgclu started
+nlgclu finished
+nlgclu took 0h0m0s
+------------------------------------
+strnlgclu started
+strnlgclu finished
+strnlgclu took 0h0m1s
+------------------------------------
+nlgclu2grid started
+nlgclu2grid finished
+nlgclu2grid took 0h0m0s
+------------------------------------
+======================================================================
+data: id.small.words
+======================================================================
+string2vec started
+string2vec finished
+string2vec took 0h0m0s
+------------------------------------
+nlgclu started
+nlgclu finished
+nlgclu took 0h0m0s
+------------------------------------
+strnlgclu started
+strnlgclu finished
+strnlgclu took 0h0m4s
+------------------------------------
+nlgclu2grid started
+nlgclu2grid finished
+nlgclu2grid took 0h0m0s
+------------------------------------
