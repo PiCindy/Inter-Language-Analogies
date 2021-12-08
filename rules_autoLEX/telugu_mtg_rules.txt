@@ -1,0 +1,6 @@
+Gender  relation,head-pos,child-pos
+Person  relation,head-pos,child-pos
+Number  relation,head-pos,child-pos
+Mood  relation,head-pos,child-pos
+Case  relation,head-pos,child-pos
+Tense  relation,head-pos,child-pos

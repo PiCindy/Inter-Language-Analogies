@@ -1,0 +1,16 @@
+Gender  relation,head-pos,child-pos
+compound,PROPN,PROPN	comp:aux,AUX,VERB	mod,PROPN,NOUN	comp:aux,AUX,AUX	conj,PROPN,PROPN	mod,PROPN,PROPN	compound,PROPN,NOUN	udep,PROPN,ADP	conj,PROPN,NOUN	conj,PROPN,ADP	
+
+Person  relation,head-pos,child-pos
+subj,AUX,PRON	subj,VERB,PRON	comp:pred,AUX,PRON	comp:obj,ADP,PRON	comp:obl,VERB,PRON	comp:obj,VERB,PRON	udep,AUX,PRON	udep,NOUN,PRON	unk,NOUN,PRON	udep,VERB,PRON	
+
+Number  relation,head-pos,child-pos
+Mood  relation,head-pos,child-pos
+conj,VERB,AUX	mod,AUX,AUX	conj,VERB,VERB	conj,AUX,AUX	mod,AUX,VERB	udep,AUX,AUX	conj,AUX,VERB	udep,VERB,AUX	compound,VERB,VERB	
+
+Case  relation,head-pos,child-pos
+mod,NOUN,ADJ	det,NOUN,DET	conj,PROPN,PROPN	conj,PROPN,NOUN	conj,PROPN,ADP	conj,ADJ,ADJ	conj,PRON,NOUN	conj,VERB,VERB	conj,ADJ,NOUN	det,NOUN,PRON	
+
+Tense  relation,head-pos,child-pos
+mod,AUX,AUX	conj,AUX,AUX	conj,VERB,VERB	mod,VERB,VERB	compound,VERB,VERB	
+

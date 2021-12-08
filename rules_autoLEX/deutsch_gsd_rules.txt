@@ -1,0 +1,16 @@
+Gender  relation,head-pos,child-pos
+det,NOUN,DET	mod,NOUN,ADJ	flat,PROPN,PROPN	det,PROPN,DET	appos,NOUN,PROPN	conj,PROPN,PROPN	det@poss,NOUN,DET	mod,PROPN,PROPN	det,NOUN,PRON	appos,PROPN,PROPN	
+
+Person  relation,head-pos,child-pos
+Number  relation,head-pos,child-pos
+det,NOUN,DET	mod,NOUN,ADJ	flat,PROPN,PROPN	det,PROPN,DET	subj,VERB,NOUN	subj,VERB,PRON	appos,NOUN,PROPN	subj,AUX,NOUN	conj,PROPN,PROPN	subj@pass,AUX,NOUN	
+
+Mood  relation,head-pos,child-pos
+comp:obj,VERB,AUX	comp:aux,AUX,VERB	comp:aux,AUX,AUX	comp:obj,SCONJ,AUX	
+
+Case  relation,head-pos,child-pos
+det,NOUN,DET	flat,PROPN,PROPN	det,PROPN,DET	conj,NOUN,NOUN	appos,NOUN,PROPN	conj,PROPN,PROPN	det@poss,NOUN,DET	mod,PROPN,PROPN	det,NOUN,PRON	appos,PROPN,PROPN	
+
+Tense  relation,head-pos,child-pos
+conj,VERB,VERB	conj,AUX,VERB	conj,VERB,AUX	parataxis,VERB,VERB	mod,VERB,VERB	parataxis,AUX,VERB	mod,VERB,AUX	mod,AUX,VERB	mod,AUX,AUX	conj,VERB,NOUN	
+

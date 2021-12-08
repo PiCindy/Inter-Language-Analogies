@@ -1,0 +1,14 @@
+Gender  relation,head-pos,child-pos
+det,NOUN,DET	conj,NOUN,NOUN	mod,NOUN,ADJ	mod,NOUN,NOUN	mod,NOUN,PRON	mod,ADJ,ADJ	appos,NOUN,NOUN	flat@name,NOUN,NOUN	conj,ADJ,ADJ	comp:obj,ADJ,NOUN	
+
+Person  relation,head-pos,child-pos
+appos,PRON,PRON	mod,PRON,PRON	
+
+Number  relation,head-pos,child-pos
+mod,NOUN,ADJ	det,NOUN,DET	mod,NOUN,NUM	mod,NOUN,PRON	conj,ADJ,ADJ	det,ADJ,DET	conj,NUM,NUM	det,DET,DET	det,PRON,DET	det,NUM,DET	
+
+Mood  relation,head-pos,child-pos
+Case  relation,head-pos,child-pos
+Tense  relation,head-pos,child-pos
+conj,VERB,VERB	conj,AUX,AUX	conj,AUX,VERB	conj,VERB,AUX	comp:obj,VERB,AUX	comp:obj,VERB,VERB	comp:pred,VERB,AUX	comp:pred,AUX,VERB	mod,AUX,VERB	comp:aux,AUX,AUX	
+
