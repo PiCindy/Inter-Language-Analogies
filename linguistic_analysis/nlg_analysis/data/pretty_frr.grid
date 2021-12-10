@@ -1,0 +1,73 @@
+# Grid no.: 1 - Attributes(length=2, width=2, size=4, filled=4, saturation=1.0)
+gängen        : wään
+wjarst gängen : wjarst wään
+
+# Grid no.: 2 - Attributes(length=2, width=2, size=4, filled=4, saturation=1.0)
+bliiw      : bliw
+san kiimen : san kimen
+
+# Grid no.: 3 - Attributes(length=2, width=2, size=4, filled=4, saturation=1.0)
+ded         : deest
+hed broocht : heest broocht
+
+# Grid no.: 4 - Attributes(length=2, width=2, size=4, filled=4, saturation=1.0)
+mååget    : maaget
+tu båågen : tu baagen
+
+# Grid no.: 5 - Attributes(length=2, width=2, size=4, filled=4, saturation=1.0)
+skriiw   : hed skrewen
+beskriiw : hed beskrewen
+
+# Grid no.: 6 - Attributes(length=4, width=11, size=44, filled=26, saturation=0.5909090909090909)
+hääwe : wårde jeewe : hääwe kööt : mååge       : bååge       : kaame :              : gunge       :             : drainke       : ferliise
+hääw  : wård jeewe  : hääw kööt  : mååg        : bååg        : kaam  : greew        :             : bliw        :               :
+      :             :            : wårde mååge : wårde bååge :       : wårde greewe : wårde gunge : wårde bliwe : wårde drainke :
+      :             :            :             : än bååg     :       :              :             : än bliw     :               : än ferliis
+
+# Grid no.: 7 - Attributes(length=2, width=2, size=4, filled=4, saturation=1.0)
+droonk      : woon
+hed dronken : hed wonen
+
+# Grid no.: 8 - Attributes(length=2, width=4, size=8, filled=8, saturation=1.0)
+pluuget     : wonen     : maaget     : skrewen
+hed pluuget : hed wonen : hed maaget : hed skrewen
+
+# Grid no.: 9 - Attributes(length=2, width=2, size=4, filled=4, saturation=1.0)
+grip       : jeew
+wård gripe : wård jeewe
+
+# Grid no.: 10 - Attributes(length=5, width=10, size=50, filled=26, saturation=0.52)
+wel      : haa      : dreeg      : fu      : wees      : breeg      : faal     : bliiw      : stridj      : bååg
+skel wel : skel haa : skel dreeg : skel fu : skel wees :            :          :            :             :
+         :          : wääl dreeg : wääl fu :           :            :          :            :             :
+         : wel haa  :            : wel fu  :           : wel breeg  : wel faal :            :             :
+         :          : tu dreegen :         :           : tu breegen :          : tu bliiwen : tu stridjen : tu båågen
+
+# Grid no.: 11 - Attributes(length=2, width=2, size=4, filled=4, saturation=1.0)
+wel    : wääl
+wel fu : wääl fu
+
+# Grid no.: 12 - Attributes(length=2, width=2, size=4, filled=4, saturation=1.0)
+hed dronken : hed maaget
+haa dronken : haa maaget
+
+# Grid no.: 13 - Attributes(length=2, width=2, size=4, filled=4, saturation=1.0)
+haa toocht : haa streden
+hed toocht : hed streden
+
+# Grid no.: 14 - Attributes(length=2, width=2, size=4, filled=4, saturation=1.0)
+wårst gunge : wårst forjeese
+wårde gunge : wårde forjeese
+
+# Grid no.: 15 - Attributes(length=2, width=2, size=4, filled=4, saturation=1.0)
+häin ferjin  : häin kööt
+hääwe ferjin : hääwe kööt
+
+# Grid no.: 16 - Attributes(length=2, width=2, size=4, filled=4, saturation=1.0)
+san kimen  : san feelen
+wiar kimen : wiar feelen
+
+# Grid no.: 17 - Attributes(length=2, width=2, size=4, filled=4, saturation=1.0)
+skal kem   : tu kemen
+skal bliiw : tu bliiwen
+
