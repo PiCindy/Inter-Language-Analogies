@@ -1,0 +1,74 @@
+FINNISH RULES:
+
+VERBS (add suffixes, if two words the first is inflected, some exceptions)
+
+INFINITIVE=
+	active "-"
+	passive "-s"
+
+PARTICIPLE=
+	present "-nde"
+	past "-d"/"-en"
+	
+CONVERBS=
+	active "-t"
+	passive "-ts"
+	
+IMPERATIVE= "-"
+
+INDICATIVE=
+	PRESENT
+		active "-r"
+		passive "-s"
+	PAST	
+		active "-de"
+		passive "-des"/"-es"
+
+
+
+NOUNS (add suffixes, sometimes the last 2 letters can change also, some exceptions)
+
+NOMINATIVE=
+	DEFINITE
+		singular "-en"
+		plural "-arna"/"-erna"/"-orna"/"-en"
+	INDEFINITE
+		singular "-"
+		plural "-or"/"-ar"/"-er"/"-"
+
+GENITIVE=
+	DEFINITE
+		singular "-ens"/"-ets"
+		plural "-arnas"/"-ornas"/"-ernas"/"-ens"
+	INDEFINITE
+		singular "-ets"/"-ens"/"-ans"
+		plural "-arnas"/"-ernas"/"-ornas"
+
+
+
+ADJECTIVES (add suffixes, if end in "en" or "er" = the "e" is removed)
+
+DEFINITE=
+	undefined "-a"/"-e"
+	masculine singular "-e"
+	
+INDEFINITE=
+	neutral singular "-t"
+	masc+fem singular "-"
+	plural "-a"
+
+COMPARATIVE=
+	indef masc+fem singular "-are"
+	indef masc singular "-are"
+	indef neutral singular "-are"
+	indefinite plural "-are"
+	definite "-are"
+	
+SUPERLATIVE=
+	definite "-aste"
+	definite masc singular "-aste"
+	indefinite masc+fem singular "-ast"
+	indefinite neutral singular "-ast"
+	indefinite plural "-ast"
+	
+

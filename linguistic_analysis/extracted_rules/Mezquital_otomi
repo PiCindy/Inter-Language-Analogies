@@ -1,0 +1,32 @@
+MEZQUITAL OTOMI RULES:
+(only singular, verbs inflexed thanks to prefixes)
+
+IRREGULAR=
+	1st person "ga"
+	2nd person "gi"
+	3rd person "da"
+
+PERFECT=
+	Present:
+		1st person "stá"
+		2nd person "xká"
+		3rd person "xa"
+	Past:
+		1st person "stí"
+		2nd person "xkí"
+		3rd person "xki"
+	
+PERFECTIVE=
+	1st person "dá"
+	2nd person "gá"
+	3rd person "bi"
+
+IMPERFECTIVE=
+	Present:
+		1st person "dí"
+		2nd person "gí"
+		3rd person - only tonal change
+	Past:
+		1st person "ndi"
+		2nd person "ngí"
+		3rd person "mí"

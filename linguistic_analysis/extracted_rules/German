@@ -1,0 +1,73 @@
+GERMAN RULES:
+inflectional language, for verbs: the radical is appended with suffixes listed below
+
+VERBS
+
+INFINITIVE= "-en"
+
+INDICATIVE=
+	Present:
+		Singular
+			1st person "-e"
+			2nd person "-est"
+			3rd person "-et"
+		Plural
+			1st person "-en"
+			2nd person "-t"
+			3rd person "-en"
+	Past:
+		Singular
+			1st person "-te"
+			2nd person "-test"
+			3rd person "-te"
+		Plural
+			1st person "-ten"
+			2nd person "-tet"
+			3rd person "-ten"
+
+SUBJUNCTIVE=
+	Present:
+		Singular
+			1st person "-e"
+			2nd person "-est"
+			3rd person "-t"
+		Plural
+			1st person "-en"
+			2nd person "-t"
+			3rd person "-en"
+	Past:
+		Singular
+			1st person "-te"
+			2nd person "-test"
+			3rd person "-te"
+		Plural
+			1st person "-ten"
+			2nd person "-tet"
+			3rd person "-ten"
+
+IMPERATIVE=
+	Singular
+		2nd person -
+	Plural
+		2nd person "-t"
+		
+
+
+NOUNS
+
+NOMINATIVE=
+	Singular -
+	Plural "-e" (and umlaut on last vowel)
+
+ACCUSATIVE=
+	Singular -
+	Plural "-e"
+		
+DATIVE=
+	Singular "-n"
+	Plural "-en"
+		
+GENITIVE=
+	Singular "-s"
+	Plural "-e"
+
