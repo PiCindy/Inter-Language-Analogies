@@ -1,65 +1,3 @@
---- NOUNS ---
-
-NOMINATIVE
-	Singular: doesn't change
-	Plural: -t
-	
-ACCUSATIVE
-	Singular: doesn't change
-	Plural: -t
-	
-GENITIVE
-	Singular: -n
-	Plural: -en
-
-TRANSLATIVE
-	Singular: -ksi	
-	Plural: -iksi
-	
-PARTITIVE
-	Singular: -a
-	Plural: -ja / -ita 
-		
-PRIVATIVE
-	Singular: -tta
-	Plural: -itta
-
-INSTRUMENTAL
-	Plural: -in
-
-COMITATIVE
-	Plural: -ineen
-
-FORMAL
-	Singular: -na
-	Plural: -ina
-	
-AT + ABLATIVE
-	Singular: -lta
-	Plural: -ilta
-	
-AT + ALLATIVE
-	Singular: -lle
-	Plural: -ille
-	
-AT + ESSIVE
-	Singular: -lla
-	Plural: -illa
-	
-IN + ABLATIVE
-	Singular: -sta
-	Plural: -ista
-	
-IN + ALLATIVE
-	Singular: doubling last vowel + n
-	Plural: -i(h)in
-	
-IN + ESSIVE
-	Singular: -ssa
-	Plural: -issa
-
-
-
 --- VERBS ---
 
 INFINITIVE: doesn't change
@@ -120,6 +58,68 @@ POTENTIONAL
 			2nd person: -nette
 			3rd person: -nevat
 		Passive: -neen
+
+
+
+--- NOUNS ---
+
+NOMINATIVE
+	Singular: doesn't change
+	Plural: -t
+	
+ACCUSATIVE
+	Singular: doesn't change
+	Plural: -t
+	
+GENITIVE
+	Singular: -n
+	Plural: -en
+
+TRANSLATIVE
+	Singular: -ksi	
+	Plural: -iksi
+	
+PARTITIVE
+	Singular: -a
+	Plural: -ja / -ita 
+		
+PRIVATIVE
+	Singular: -tta
+	Plural: -itta
+
+INSTRUMENTAL
+	Plural: -in
+
+COMITATIVE
+	Plural: -ineen
+
+FORMAL
+	Singular: -na
+	Plural: -ina
+	
+AT + ABLATIVE
+	Singular: -lta
+	Plural: -ilta
+	
+AT + ALLATIVE
+	Singular: -lle
+	Plural: -ille
+	
+AT + ESSIVE
+	Singular: -lla
+	Plural: -illa
+	
+IN + ABLATIVE
+	Singular: -sta
+	Plural: -ista
+	
+IN + ALLATIVE
+	Singular: doubling last vowel + n
+	Plural: -i(h)in
+	
+IN + ESSIVE
+	Singular: -ssa
+	Plural: -issa
 
 
 
