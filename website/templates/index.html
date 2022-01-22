@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+    <title>Languages rules comparison</title>
+</head>
+<body>
+    <h1>Languages rules comparison</h1>
+   
+    <form action="publish_rules" method="POST" class="mb-2 needs-validation" novalidate>
+        <p>Select the languages to compare </p>
+        <div class="mt-3 row no-gutters align-items-center">
+            <div id="step2-2" class="col-4 input-group mr-2">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="language-1-addon">First language</span>
+                </div>
+                <select id="language-selector-1" class="form-control" name="language1">
+                    <option value="english">English</option>
+                    <option value="german">German</option>
+                    <option value="swedish">Swedish</option>
+                    <option value="finnish">Finnish</option>
+                    <option value="karelian">Karelian</option>
+                    <option value="otomi">Mezquital Otomi</option>
+                </select>
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="language-2-addon">Second language</span>
+                </div>
+                <select id="language-selector-2" class="form-control" name="language2">
+                    <option value="english">English</option>
+                    <option value="german">German</option>
+                    <option value="swedish">Swedish</option>
+                    <option value="finnish">Finnish</option>
+                    <option value="karelian">Karelian</option>
+                    <option value="otomi">Mezquital Otomi</option>
+                </select>
+            </div>
+        </div>
+        <div id="step4" class="col-auto">
+            <button class="btn btn-success" type="submit">Show</button>
+        </div>
+    </form>
+    <div class="row">
+        <div class="column">
+            <div style="height:360px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;white-space: pre;">
+                <p>{{rules_lang_1}}</p>
+            </div>
+        </div>
+        <div class="column">
+            <div style="height:360px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;white-space: pre;">
+                <p>{{rules_lang_2}}</p>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>
