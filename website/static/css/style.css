@@ -1,3 +1,9 @@
+.scrollable0panel{
+    height: 600px;
+    overflow: auto;
+    white-space: pre;
+}
+
 .column {
   float: left;
   width: 50%;
