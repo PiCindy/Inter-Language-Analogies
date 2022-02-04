@@ -19,3 +19,21 @@
   display: table;
   clear: both;
 }
+
+details {
+    padding: .5em .5em 0;
+    display: grid;
+}
+
+summary {
+    font-weight: bold;
+    margin: -.5em -.5em 0;
+}
+
+details[open] {
+    padding: .5em;
+}
+
+details[open] summary {
+    margin-bottom: .5em;
+}

@@ -15,14 +15,16 @@ def index():
 
 def route_print(dic):
     text = ""
-    if type(dic) == type(dict()):
-        for key, val in dic.items():
-            if key.capitalize() != key and type(val) == type(dict()):
-                text += '<details><summary>' + key + '</summary>' + route_print(val) + '</details>'
-            elif type(val) == type(dict()):
-                text += "<p style='font-weight: bold;'>" + key + "</p>" + route_print(val)
-            else:
-                text += "<p>" + "\t" + key + ": " + val +  "</p>"
+    #text += '<details><summary>DEBUT</summary><details><summary>FIN</summary>BONJOUR</details><details><summary>FIN2</summary>BONJOUR</details></details>'
+
+    #text = "<details><summary>Details</summary><details><summary>second</summary>hi</details><details><summary>second</summary>hi</details></details>"
+
+    for key, val in dic.items():
+        if type(val) == type(dict()):
+            text += '<details><summary>' + key + '</summary>' + route_print(val) + '</details>'
+        else:
+            text += "<p>" + key + ": " + val +  "</p>"
+
     return text
 
 

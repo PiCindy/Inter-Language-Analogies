@@ -13,31 +13,18 @@ def index():
 
     #English  Finnish  German  Karelian  Mezquital_otomi  Swedish
 
-def route_print(dic):
-    text = ""
-    if type(dic) == type(dict()):
-        for key, val in dic.items():
-            if key.capitalize() != key and type(val) == type(dict()):
-                text += '<details><summary>' + key + '</summary>' + route_print(val) + '</details>'
-            elif type(val) == type(dict()):
-                text += "<p style='font-weight: bold;'>" + key + "</p>" + route_print(val)
-            else:
-                text += "<p>" + "\t" + key + ": " + val +  "</p>"
-    return text
-
-
-def route_print2(language, dic, tabs=0, num=0):
+def route_print(language, dic, tabs=0, num=0):
 
     text = ""
 
     for key, val in dic.items():
         #text += "\t" * tabs + '<t style="color:blue;">' + key + '</t>' #background-color:yellow;
+        
         if type(val) == type(dict()):
-            text += '<details class="btn btn-link"><summary>' + key + '</summary><p>' +  + '</p></details>'
-            #text += '<details class="btn btn-link"' + f"#section{num}" +\
-             #("\t" * tabs) + '<t style="color:blue;">' + key + "</t>" + "</details>" #+ 'aria-expanded="true" aria-controls="'+ f"section{num}"+
-
-            #text += "\n" + f'<div class="collapse" id="' + f"section{num}" + '">'
+            text += '<button class="btn btn-link" data-target="' + f"#section{num}" + '" data-toggle="collapse"' + '  aria-expanded="false">' +\
+             ("\t" * tabs) + '<t style="color:blue;">' + key + "</t>" + "</button>" #+ 'aria-expanded="true" aria-controls="'+ f"section{num}"+
+            
+            text += "\n" + f'<div class="collapse" id="' + f"section{num}" + '">'
             num += 1
             out_text, num = route_print(language, val, tabs+1, num)
             text += "\n" + out_text
@@ -48,7 +35,7 @@ def route_print2(language, dic, tabs=0, num=0):
         if tabs == 0:
             text += "\n"
     return text, num
-
+    
     """
      <a data-target="#demo" data-toggle="collapse">
     CLICKABLE TEXT WOULD GO HERE INSTEAD OF BUTTON
@@ -78,17 +65,16 @@ def publish_rules():
         else:
             rules1 = f.read()
     if not rules1:
-        #rules1, _ = route_print(language1, dic_1, tabs=0)
-        rules1 = route_print(dic_1)
+        rules1, _ = route_print(language1, dic_1, tabs=0)
     with open(rel_path + dic_langs[language2], 'r') as f:
         if dic_langs[language2].endswith(".json"):
             dic_2 = json.load(f)
         else:
             rules2 = f.read()
     if not rules2:
-        #   rules2, _ = route_print(language2, dic_2, tabs=0)
-        rules2 = route_print(dic_2)
+        rules2, _ = route_print(language2, dic_2, tabs=0)
+        
     print(rules1)
-
+    
 
     return render_template('index.html', lang_1 = language1.capitalize(), rules_lang_1=rules1, lang_2 = language2.capitalize(), rules_lang_2=rules2)
