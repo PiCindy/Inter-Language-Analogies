@@ -1,17 +1,25 @@
 from flask import Flask, render_template, request
 import json
+import pandas as pd
+import random
 
 
 app = Flask(__name__)
 
+SHORT_NAME = {'english':'eng',
+              'german': 'deu',
+              'swedish': 'swe',
+              'finnish': 'fin',
+              'karelian': 'krl',
+              'otomi': 'ote'}
+              
+LONG_NAME = {v:k for k, v in SHORT_NAME.items()}
+
 @app.route('/')
 def index():
 
-    return render_template('index.html', lang_1="", rules_lang_1="", lang_2="", rules_lang_2="")
+    return render_template('index.html', lang_1="", rules_lang_1="", lang_2="", rules_lang_2="", rules_percent="", analogies_examples=[])
 
-    #linguistic_analysis/extracted_rules
-
-    #English  Finnish  German  Karelian  Mezquital_otomi  Swedish
 
 def route_print(dic):
     text = ""
@@ -67,6 +75,17 @@ def process_similarities(lang1, lang2):
                 change_values(lang2, keys2, rules2)
 
 
+def count_similarity_percent(lang):
+    if type(lang) != type(dict()):
+        return (1 if "<t" in lang else 0, 1)
+    num_changed = 0
+    num_total = 0
+    for key in lang:
+        changed, total = count_similarity_percent(lang[key])
+        num_changed += changed
+        num_total += total
+    return num_changed, num_total
+
 
 @app.route('/publish_rules',  methods=['POST'])
 def publish_rules():
@@ -82,8 +101,7 @@ def publish_rules():
     rel_path = "../linguistic_analysis/extracted_rules/"
     rules1 = ""
     rules2 = ""
-    bla = "\u001B[35m"
-    res = "\u001B[0m"
+    
     with open(rel_path + dic_langs[language1], 'r') as f:
         dic_1 = json.load(f)
 
@@ -93,5 +111,22 @@ def publish_rules():
     rules1 = route_print(dic_1)
     rules2 = route_print(dic_2)
 
-
-    return render_template('index.html', lang_1 = language1.capitalize(), rules_lang_1=rules1, lang_2 = language2.capitalize(), rules_lang_2=rules2)
+    same, total = count_similarity_percent(dic_2)
+    rules_similarity = round(100 * same / total)
+    
+    similarity_message = f"{rules_similarity}% of rules in {language2.capitalize()} are similar to rules in {language1.capitalize()}."
+    
+    csv_path = "../results/6langs_fscore.csv"
+    
+    df = pd.read_csv(csv_path, index_col=0)
+    
+    transfer_result = round(1000 * df.loc[language1, language2]) / 10
+    
+    similarity_message += f"\nModel transfer score from {language1.capitalize()} to {language2.capitalize()} is {transfer_result}%."
+    
+    with open("../guessed_analogies/guessed_analogies-" + SHORT_NAME[language1] + ".json", 'r') as f:
+        analogies = json.load(f)
+    
+    analogies_examples = random.choices(analogies[SHORT_NAME[language2]], k=10)
+    return render_template('index.html', lang_1 = language1.capitalize(), rules_lang_1=rules1, lang_2 = language2.capitalize(), 
+                           rules_lang_2=rules2, rules_percent=similarity_message, analogies_examples=analogies_examples)
