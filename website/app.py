@@ -13,19 +13,34 @@ def index():
 
     #English  Finnish  German  Karelian  Mezquital_otomi  Swedish
 
-def route_print(language, dic, tabs=0):
+def route_print(language, dic, tabs=0, num=0):
 
     text = ""
 
     for key, val in dic.items():
-        text += "\t" * tabs + '<t style="color:blue;">' + key + '</t>' #background-color:yellow;
+        #text += "\t" * tabs + '<t style="color:blue;">' + key + '</t>' #background-color:yellow;
+        
         if type(val) == type(dict()):
-            text += "\n" + route_print(language, val, tabs+1)
+            text += '<button class="btn btn-link" data-target="' + f"#section{num}" + '" data-toggle="collapse"' + '  aria-expanded="false">' +\
+             ("\t" * tabs) + '<t style="color:blue;">' + key + "</t>" + "</button>" #+ 'aria-expanded="true" aria-controls="'+ f"section{num}"+
+            
+            text += "\n" + f'<div class="collapse" id="' + f"section{num}" + '">'
+            num += 1
+            out_text, num = route_print(language, val, tabs+1, num)
+            text += "\n" + out_text
+            text += "</div>"
         else:
-            text += ": " + val + "\n"
+            text += "<p>" + "\t" * tabs + '<t style="color:blue;">' + key + '</t>'
+            text += ": " + val +  "</p>" + "\n"
         if tabs == 0:
             text += "\n"
-    return text
+    return text, num
+    
+    """
+     <a data-target="#demo" data-toggle="collapse">
+    CLICKABLE TEXT WOULD GO HERE INSTEAD OF BUTTON
+</a>
+    """
 
 
 @app.route('/publish_rules',  methods=['POST'])
@@ -50,13 +65,16 @@ def publish_rules():
         else:
             rules1 = f.read()
     if not rules1:
-        rules1 = route_print(language1, dic_1, tabs=0)
+        rules1, _ = route_print(language1, dic_1, tabs=0)
     with open(rel_path + dic_langs[language2], 'r') as f:
         if dic_langs[language2].endswith(".json"):
             dic_2 = json.load(f)
         else:
             rules2 = f.read()
     if not rules2:
-        rules2 = route_print(language2, dic_2, tabs=0)
+        rules2, _ = route_print(language2, dic_2, tabs=0)
+        
+    print(rules1)
+    
 
     return render_template('index.html', lang_1 = language1.capitalize(), rules_lang_1=rules1, lang_2 = language2.capitalize(), rules_lang_2=rules2)

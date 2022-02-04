@@ -1,7 +1,11 @@
 .scrollable0panel{
     height: 600px;
-    overflow: auto;
-    white-space: pre;
+    overflow: scroll;
+    white-space: pre-wrap;
+}
+
+.collapse.show {
+  visibility: visible;
 }
 
 .column {
