@@ -26,34 +26,46 @@ def route_print(dic):
     return text
 
 
-def route_print2(language, dic, tabs=0, num=0):
+def iterate_through_rules(el, keys):
+    if type(el) != type(dict()):
+        yield keys, el
+        return
+    for key, val in el.items():
+        yield from iterate_through_rules(val, keys + [key])
 
-    text = ""
 
-    for key, val in dic.items():
-        #text += "\t" * tabs + '<t style="color:blue;">' + key + '</t>' #background-color:yellow;
-        if type(val) == type(dict()):
-            text += '<details class="btn btn-link"><summary>' + key + '</summary><p>' +  + '</p></details>'
-            #text += '<details class="btn btn-link"' + f"#section{num}" +\
-             #("\t" * tabs) + '<t style="color:blue;">' + key + "</t>" + "</details>" #+ 'aria-expanded="true" aria-controls="'+ f"section{num}"+
-
-            #text += "\n" + f'<div class="collapse" id="' + f"section{num}" + '">'
-            num += 1
-            out_text, num = route_print(language, val, tabs+1, num)
-            text += "\n" + out_text
-            text += "</div>"
+def change_values(lang1, keys, rules):
+    for k in keys:
+        if not (k in lang1):
+            print("ERRROROROORORORO")
+        elif type(lang1[k]) != type(dict()):
+            lang1[k] = rules
         else:
-            text += "<p>" + "\t" * tabs + '<t style="color:blue;">' + key + '</t>'
-            text += ": " + val +  "</p>" + "\n"
-        if tabs == 0:
-            text += "\n"
-    return text, num
+            lang1 = lang1[k]
 
-    """
-     <a data-target="#demo" data-toggle="collapse">
-    CLICKABLE TEXT WOULD GO HERE INSTEAD OF BUTTON
-</a>
-    """
+def process_similarities(lang1, lang2):
+    for keys1, rules1 in iterate_through_rules(lang1, []):
+        for keys2, rules2 in iterate_through_rules(lang2, []):
+            if set(keys1) <= set(keys2) or set(keys2) <= set(keys1):
+                rules1 = rules1.split("|")
+                rules2 = rules2.split("|")
+                new_rules1 = []
+                new_rules2 = []
+                for r1 in rules1:
+                    if r1 in rules2:
+                        new_rules1.append('<t style="color:blue">' + r1 + '</t>')
+                    else:
+                        new_rules1.append(r1)
+                for r2 in rules2:
+                    if r2 in rules1:
+                        new_rules2.append('<t style="color:blue">' + r2 + '</t>')
+                    else:
+                        new_rules2.append(r2)
+                rules1 = "|".join(new_rules1)
+                rules2 = "|".join(new_rules2)
+                change_values(lang1, keys1, rules1)
+                change_values(lang2, keys2, rules2)
+                
 
 
 @app.route('/publish_rules',  methods=['POST'])
@@ -73,22 +85,13 @@ def publish_rules():
     bla = "\u001B[35m"
     res = "\u001B[0m"
     with open(rel_path + dic_langs[language1], 'r') as f:
-        if dic_langs[language1].endswith(".json"):
-            dic_1 = json.load(f)
-        else:
-            rules1 = f.read()
-    if not rules1:
-        #rules1, _ = route_print(language1, dic_1, tabs=0)
-        rules1 = route_print(dic_1)
+        dic_1 = json.load(f)
+        
     with open(rel_path + dic_langs[language2], 'r') as f:
-        if dic_langs[language2].endswith(".json"):
-            dic_2 = json.load(f)
-        else:
-            rules2 = f.read()
-    if not rules2:
-        #   rules2, _ = route_print(language2, dic_2, tabs=0)
-        rules2 = route_print(dic_2)
-    print(rules1)
+        dic_2 = json.load(f)
+    process_similarities(dic_1, dic_2)
+    rules1 = route_print(dic_1)
+    rules2 = route_print(dic_2)
 
 
     return render_template('index.html', lang_1 = language1.capitalize(), rules_lang_1=rules1, lang_2 = language2.capitalize(), rules_lang_2=rules2)
