@@ -56,7 +56,6 @@
                 <button class="btn btn-success" type="submit">Show</button>
             </div>
         </div>
-        
     </form>
     <div class="mt-3 row no-gutters align-items-top">
         <div class="col-md-1">
@@ -74,6 +73,40 @@
             </div>
         </div>
         <div class="col-md-1">
+        </div>
+    </div>
+    <div class="mt-3 row no-gutters align-items-top">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-11">
+            <p style="font-size:30px;white-space: pre-wrap;">{{rules_percent}}</p>
+        </div>
+    </div>
+    <div class="mt-3 row no-gutters align-items-top">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-9">
+            <p style="font-size:30px;white-space: pre-wrap;">Example guessed analogies a:b as c:d from {{lang_2}} by model trained on {{lang_1}}</p>
+            <table id="analogies" class="table table-sm table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">a</th>
+                        <th scope="col">b</th>
+                        <th scope="col">c</th>
+                        <th scope="col">d</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for row in analogies_examples %}
+                    <tr>
+                        <td>{{ row[0] }}</td>
+                        <td>{{ row[1] }}</td>
+                        <td>{{ row[2] }}</td>
+                        <td>{{ row[3] }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
         </div>
     </div>
 </body>
