@@ -22,7 +22,7 @@ def route_print(dic):
             elif type(val) == type(dict()):
                 text += "<p style='font-weight: bold;'>" + key + "</p>" + route_print(val)
             else:
-                text += "<p>" + "\t" + key + ": " + val +  "</p>"
+                text += "<p style='font-size: 1.1em;'>" + "\t" + key + ": " + val +  "</p>"
     return text
 
 
@@ -53,19 +53,19 @@ def process_similarities(lang1, lang2):
                 new_rules2 = []
                 for r1 in rules1:
                     if r1 in rules2:
-                        new_rules1.append('<t style="color:blue">' + r1 + '</t>')
+                        new_rules1.append('<t style="color:#9C0F48">' + r1 + '</t>')
                     else:
                         new_rules1.append(r1)
                 for r2 in rules2:
                     if r2 in rules1:
-                        new_rules2.append('<t style="color:blue">' + r2 + '</t>')
+                        new_rules2.append('<t style="color:#9C0F48">' + r2 + '</t>')
                     else:
                         new_rules2.append(r2)
                 rules1 = "|".join(new_rules1)
                 rules2 = "|".join(new_rules2)
                 change_values(lang1, keys1, rules1)
                 change_values(lang2, keys2, rules2)
-                
+
 
 
 @app.route('/publish_rules',  methods=['POST'])
@@ -86,7 +86,7 @@ def publish_rules():
     res = "\u001B[0m"
     with open(rel_path + dic_langs[language1], 'r') as f:
         dic_1 = json.load(f)
-        
+
     with open(rel_path + dic_langs[language2], 'r') as f:
         dic_2 = json.load(f)
     process_similarities(dic_1, dic_2)

@@ -20,6 +20,14 @@
   clear: both;
 }
 
+h1 {
+  color: #54BAB9;
+}
+
+body {
+  background-color: #F7ECDE;
+}
+
 details {
     padding: .5em .5em 0;
     display: grid;
