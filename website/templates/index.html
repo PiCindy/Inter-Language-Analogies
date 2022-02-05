@@ -45,6 +45,7 @@
                 </div>
             </div>
             <div class="col-md-1"> </div>
+            {% if rules_lang_1 is defined and rules_lang_1|length > 0 %}
             <div class="col-md-4">
             <fieldset class="border border-info rounded border-width:3px" >
             <div>
@@ -53,7 +54,7 @@
 The <a href="https://en.wikipedia.org/wiki/Inflection" target="_blank" rel="noopener noreferrer">inflections</a> for each language chosen are displayed below, classified into morphological rules. 
 Suffixes have a "-" sign preceding each inflection. 
 Prefixes have a "-" sign following each inflection. 
-Similar inflections across two languages are shown in <t style="color:#9C0F48">red</t>.</p></div> </fieldset> </div>
+Similar inflections across two languages are shown in <t style="color:#9C0F48">red</t>.</p></div> </fieldset> {% endif %}</div>
         </div>
     </form>
     <div class="mt-3 row no-gutters align-items-top" >
