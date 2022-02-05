@@ -98,7 +98,7 @@ def publish_rules():
                  'finnish': 'finnish.json',
                  'karelian': 'karelian.json',
                  'otomi': 'otomi.json'}
-    rel_path = "../linguistic_analysis/extracted_rules/"
+    rel_path = "results/"
     rules1 = ""
     rules2 = ""
     
@@ -116,7 +116,7 @@ def publish_rules():
     
     similarity_message = f"{rules_similarity}% of rules in {language2.capitalize()} are similar to rules in {language1.capitalize()}."
     
-    csv_path = "../results/6langs_fscore.csv"
+    csv_path = "results/6langs_fscore.csv"
     
     df = pd.read_csv(csv_path, index_col=0)
     
@@ -124,7 +124,7 @@ def publish_rules():
     
     similarity_message += f"\nModel transfer score from {language1.capitalize()} to {language2.capitalize()} is {transfer_result}%."
     
-    with open("../guessed_analogies/guessed_analogies-" + SHORT_NAME[language1] + ".json", 'r') as f:
+    with open("results/guessed_analogies-" + SHORT_NAME[language1] + ".json", 'r') as f:
         analogies = json.load(f)
     
     analogies_examples = random.choices(analogies[SHORT_NAME[language2]], k=10)
